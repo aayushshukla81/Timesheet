@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,36 @@
 		435C19CD23F2847D0030D06C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435C19CB23F2847D0030D06C /* Main.storyboard */; };
 		435C19CF23F284810030D06C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435C19CE23F284810030D06C /* Assets.xcassets */; };
 		435C19D223F284810030D06C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435C19D023F284810030D06C /* LaunchScreen.storyboard */; };
+		435C19DA23F288790030D06C /* splashscreenvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435C19D923F288790030D06C /* splashscreenvc.swift */; };
+		435C19DD23F289450030D06C /* timesheetgif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 435C19DC23F289450030D06C /* timesheetgif.gif */; };
+		435C19E123F28CF10030D06C /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435C19E023F28CF10030D06C /* Dashboard.storyboard */; };
+		435C19E323F28E270030D06C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435C19E223F28E270030D06C /* CardView.swift */; };
+		435C19E623F2A6210030D06C /* Assigntasks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435C19E523F2A6210030D06C /* Assigntasks.storyboard */; };
+		435C19E923F2A6E20030D06C /* Attendence.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435C19E823F2A6E20030D06C /* Attendence.storyboard */; };
+		435C19EC23F2A7740030D06C /* Timesheetentry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435C19EB23F2A7740030D06C /* Timesheetentry.storyboard */; };
+		435C19EE23F2A8420030D06C /* Attendencevc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435C19ED23F2A8420030D06C /* Attendencevc.swift */; };
+		4376C13723F9AB5100B43812 /* dashboardvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4376C13623F9AB5100B43812 /* dashboardvc.swift */; };
+		4376C13923F9B0E600B43812 /* BaseActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4376C13823F9B0E600B43812 /* BaseActivity.swift */; };
+		4376C13B23F9B27600B43812 /* Assigntasksvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4376C13A23F9B27600B43812 /* Assigntasksvc.swift */; };
+		4376C13D23F9B44500B43812 /* timesheetentryvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4376C13C23F9B44500B43812 /* timesheetentryvc.swift */; };
+		439FAE01240E43110009CD9B /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 439FAE00240E43110009CD9B /* loading.gif */; };
+		439FAE03240E59B40009CD9B /* taskitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439FAE02240E59B40009CD9B /* taskitem.swift */; };
+		439FAE05240E5ADA0009CD9B /* dbconnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439FAE04240E5ADA0009CD9B /* dbconnections.swift */; };
+		439FAE07240E5E940009CD9B /* apicalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439FAE06240E5E940009CD9B /* apicalls.swift */; };
+		439FAE09240E666E0009CD9B /* taskcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439FAE08240E666E0009CD9B /* taskcell.swift */; };
+		43B2E093240A770100F88623 /* Dailyschedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B2E092240A770100F88623 /* Dailyschedule.storyboard */; };
+		43B2E095240A771800F88623 /* dailyschedulevc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B2E094240A771800F88623 /* dailyschedulevc.swift */; };
+		43B2E098240A79CF00F88623 /* Leaveschedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B2E097240A79CF00F88623 /* Leaveschedule.storyboard */; };
+		43B2E09A240A79E200F88623 /* leaveschedulevc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B2E099240A79E200F88623 /* leaveschedulevc.swift */; };
+		43B2E09D240A7C5E00F88623 /* Casemanagement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B2E09C240A7C5E00F88623 /* Casemanagement.storyboard */; };
+		43B2E09F240A7C7300F88623 /* casemanagementvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B2E09E240A7C7300F88623 /* casemanagementvc.swift */; };
+		43B2E0A2240A80E000F88623 /* Reports.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B2E0A1240A80E000F88623 /* Reports.storyboard */; };
+		43B2E0A4240A80F900F88623 /* reportsvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B2E0A3240A80F900F88623 /* reportsvc.swift */; };
+		43B2E0A7240A897300F88623 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B2E0A6240A897300F88623 /* Login.storyboard */; };
+		43B2E0A9240AB1E300F88623 /* loginvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B2E0A8240AB1E300F88623 /* loginvc.swift */; };
+		43B2E0AB240BAADE00F88623 /* idealreportvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B2E0AA240BAADE00F88623 /* idealreportvc.swift */; };
+		43B2E0AD240BB1C200F88623 /* customisedreportvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B2E0AC240BB1C200F88623 /* customisedreportvc.swift */; };
+		980558E3DD5345269642BBF5 /* Pods_Timesheet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB28992328EDDFE2F11DB3ED /* Pods_Timesheet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +54,38 @@
 		435C19CE23F284810030D06C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		435C19D123F284810030D06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		435C19D323F284810030D06C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		435C19D923F288790030D06C /* splashscreenvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splashscreenvc.swift; sourceTree = "<group>"; };
+		435C19DC23F289450030D06C /* timesheetgif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = timesheetgif.gif; sourceTree = "<group>"; };
+		435C19E023F28CF10030D06C /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		435C19E223F28E270030D06C /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		435C19E523F2A6210030D06C /* Assigntasks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Assigntasks.storyboard; sourceTree = "<group>"; };
+		435C19E823F2A6E20030D06C /* Attendence.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Attendence.storyboard; sourceTree = "<group>"; };
+		435C19EB23F2A7740030D06C /* Timesheetentry.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timesheetentry.storyboard; sourceTree = "<group>"; };
+		435C19ED23F2A8420030D06C /* Attendencevc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attendencevc.swift; sourceTree = "<group>"; };
+		4376C13623F9AB5100B43812 /* dashboardvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboardvc.swift; sourceTree = "<group>"; };
+		4376C13823F9B0E600B43812 /* BaseActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseActivity.swift; sourceTree = "<group>"; };
+		4376C13A23F9B27600B43812 /* Assigntasksvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assigntasksvc.swift; sourceTree = "<group>"; };
+		4376C13C23F9B44500B43812 /* timesheetentryvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timesheetentryvc.swift; sourceTree = "<group>"; };
+		439FAE00240E43110009CD9B /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		439FAE02240E59B40009CD9B /* taskitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskitem.swift; sourceTree = "<group>"; };
+		439FAE04240E5ADA0009CD9B /* dbconnections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dbconnections.swift; sourceTree = "<group>"; };
+		439FAE06240E5E940009CD9B /* apicalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apicalls.swift; sourceTree = "<group>"; };
+		439FAE08240E666E0009CD9B /* taskcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskcell.swift; sourceTree = "<group>"; };
+		43B2E092240A770100F88623 /* Dailyschedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dailyschedule.storyboard; sourceTree = "<group>"; };
+		43B2E094240A771800F88623 /* dailyschedulevc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dailyschedulevc.swift; sourceTree = "<group>"; };
+		43B2E097240A79CF00F88623 /* Leaveschedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Leaveschedule.storyboard; sourceTree = "<group>"; };
+		43B2E099240A79E200F88623 /* leaveschedulevc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leaveschedulevc.swift; sourceTree = "<group>"; };
+		43B2E09C240A7C5E00F88623 /* Casemanagement.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Casemanagement.storyboard; sourceTree = "<group>"; };
+		43B2E09E240A7C7300F88623 /* casemanagementvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = casemanagementvc.swift; sourceTree = "<group>"; };
+		43B2E0A1240A80E000F88623 /* Reports.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reports.storyboard; sourceTree = "<group>"; };
+		43B2E0A3240A80F900F88623 /* reportsvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reportsvc.swift; sourceTree = "<group>"; };
+		43B2E0A6240A897300F88623 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		43B2E0A8240AB1E300F88623 /* loginvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginvc.swift; sourceTree = "<group>"; };
+		43B2E0AA240BAADE00F88623 /* idealreportvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = idealreportvc.swift; sourceTree = "<group>"; };
+		43B2E0AC240BB1C200F88623 /* customisedreportvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customisedreportvc.swift; sourceTree = "<group>"; };
+		B0D4CEC895D02C04695D6F83 /* Pods-Timesheet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timesheet.release.xcconfig"; path = "Target Support Files/Pods-Timesheet/Pods-Timesheet.release.xcconfig"; sourceTree = "<group>"; };
+		BB28992328EDDFE2F11DB3ED /* Pods_Timesheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Timesheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1706A5715CE4AD985A2EFDF /* Pods-Timesheet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timesheet.debug.xcconfig"; path = "Target Support Files/Pods-Timesheet/Pods-Timesheet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				980558E3DD5345269642BBF5 /* Pods_Timesheet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +105,8 @@
 			children = (
 				435C19C423F2847D0030D06C /* Timesheet */,
 				435C19C323F2847D0030D06C /* Products */,
+				B44577A5C5C61461D535E308 /* Pods */,
+				53A3C028DCC814FF78720FB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +121,16 @@
 		435C19C423F2847D0030D06C /* Timesheet */ = {
 			isa = PBXGroup;
 			children = (
+				43B2E0A5240A896200F88623 /* Login */,
+				43B2E0A0240A80D000F88623 /* Reports */,
+				43B2E09B240A7C4400F88623 /* Case Management */,
+				43B2E096240A79BB00F88623 /* Leave Schedule */,
+				43B2E091240A76DD00F88623 /* Daily Schedule */,
+				435C19EA23F2A74E0030D06C /* Time sheet entry */,
+				435C19E723F2A6C80030D06C /* Attendence */,
+				435C19E423F2A60F0030D06C /* Assign Tasks */,
+				435C19DF23F28CD70030D06C /* Dashboard */,
+				435C19DB23F288C80030D06C /* Common Utils */,
 				435C19C523F2847D0030D06C /* AppDelegate.swift */,
 				435C19C723F2847D0030D06C /* SceneDelegate.swift */,
 				435C19C923F2847D0030D06C /* ViewController.swift */,
@@ -63,8 +138,124 @@
 				435C19CE23F284810030D06C /* Assets.xcassets */,
 				435C19D023F284810030D06C /* LaunchScreen.storyboard */,
 				435C19D323F284810030D06C /* Info.plist */,
+				435C19D923F288790030D06C /* splashscreenvc.swift */,
 			);
 			path = Timesheet;
+			sourceTree = "<group>";
+		};
+		435C19DB23F288C80030D06C /* Common Utils */ = {
+			isa = PBXGroup;
+			children = (
+				439FAE00240E43110009CD9B /* loading.gif */,
+				435C19E223F28E270030D06C /* CardView.swift */,
+				435C19DC23F289450030D06C /* timesheetgif.gif */,
+				4376C13823F9B0E600B43812 /* BaseActivity.swift */,
+				439FAE04240E5ADA0009CD9B /* dbconnections.swift */,
+				439FAE06240E5E940009CD9B /* apicalls.swift */,
+			);
+			path = "Common Utils";
+			sourceTree = "<group>";
+		};
+		435C19DF23F28CD70030D06C /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				435C19E023F28CF10030D06C /* Dashboard.storyboard */,
+				4376C13623F9AB5100B43812 /* dashboardvc.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		435C19E423F2A60F0030D06C /* Assign Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				435C19E523F2A6210030D06C /* Assigntasks.storyboard */,
+				4376C13A23F9B27600B43812 /* Assigntasksvc.swift */,
+				439FAE02240E59B40009CD9B /* taskitem.swift */,
+				439FAE08240E666E0009CD9B /* taskcell.swift */,
+			);
+			path = "Assign Tasks";
+			sourceTree = "<group>";
+		};
+		435C19E723F2A6C80030D06C /* Attendence */ = {
+			isa = PBXGroup;
+			children = (
+				435C19E823F2A6E20030D06C /* Attendence.storyboard */,
+				435C19ED23F2A8420030D06C /* Attendencevc.swift */,
+			);
+			path = Attendence;
+			sourceTree = "<group>";
+		};
+		435C19EA23F2A74E0030D06C /* Time sheet entry */ = {
+			isa = PBXGroup;
+			children = (
+				435C19EB23F2A7740030D06C /* Timesheetentry.storyboard */,
+				4376C13C23F9B44500B43812 /* timesheetentryvc.swift */,
+			);
+			path = "Time sheet entry";
+			sourceTree = "<group>";
+		};
+		43B2E091240A76DD00F88623 /* Daily Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				43B2E092240A770100F88623 /* Dailyschedule.storyboard */,
+				43B2E094240A771800F88623 /* dailyschedulevc.swift */,
+			);
+			path = "Daily Schedule";
+			sourceTree = "<group>";
+		};
+		43B2E096240A79BB00F88623 /* Leave Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				43B2E097240A79CF00F88623 /* Leaveschedule.storyboard */,
+				43B2E099240A79E200F88623 /* leaveschedulevc.swift */,
+			);
+			path = "Leave Schedule";
+			sourceTree = "<group>";
+		};
+		43B2E09B240A7C4400F88623 /* Case Management */ = {
+			isa = PBXGroup;
+			children = (
+				43B2E09C240A7C5E00F88623 /* Casemanagement.storyboard */,
+				43B2E09E240A7C7300F88623 /* casemanagementvc.swift */,
+			);
+			path = "Case Management";
+			sourceTree = "<group>";
+		};
+		43B2E0A0240A80D000F88623 /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				43B2E0A1240A80E000F88623 /* Reports.storyboard */,
+				43B2E0A3240A80F900F88623 /* reportsvc.swift */,
+				43B2E0AA240BAADE00F88623 /* idealreportvc.swift */,
+				43B2E0AC240BB1C200F88623 /* customisedreportvc.swift */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+		43B2E0A5240A896200F88623 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				43B2E0A6240A897300F88623 /* Login.storyboard */,
+				43B2E0A8240AB1E300F88623 /* loginvc.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		53A3C028DCC814FF78720FB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB28992328EDDFE2F11DB3ED /* Pods_Timesheet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B44577A5C5C61461D535E308 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1706A5715CE4AD985A2EFDF /* Pods-Timesheet.debug.xcconfig */,
+				B0D4CEC895D02C04695D6F83 /* Pods-Timesheet.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +265,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 435C19D623F284810030D06C /* Build configuration list for PBXNativeTarget "Timesheet" */;
 			buildPhases = (
+				8C0CC7541266CAC33503991F /* [CP] Check Pods Manifest.lock */,
 				435C19BE23F2847D0030D06C /* Sources */,
 				435C19BF23F2847D0030D06C /* Frameworks */,
 				435C19C023F2847D0030D06C /* Resources */,
+				32862570556D347637B19A91 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +319,65 @@
 			buildActionMask = 2147483647;
 			files = (
 				435C19D223F284810030D06C /* LaunchScreen.storyboard in Resources */,
+				435C19E923F2A6E20030D06C /* Attendence.storyboard in Resources */,
+				43B2E09D240A7C5E00F88623 /* Casemanagement.storyboard in Resources */,
+				43B2E093240A770100F88623 /* Dailyschedule.storyboard in Resources */,
+				43B2E098240A79CF00F88623 /* Leaveschedule.storyboard in Resources */,
+				435C19EC23F2A7740030D06C /* Timesheetentry.storyboard in Resources */,
+				435C19E123F28CF10030D06C /* Dashboard.storyboard in Resources */,
+				435C19E623F2A6210030D06C /* Assigntasks.storyboard in Resources */,
+				43B2E0A2240A80E000F88623 /* Reports.storyboard in Resources */,
 				435C19CF23F284810030D06C /* Assets.xcassets in Resources */,
+				435C19DD23F289450030D06C /* timesheetgif.gif in Resources */,
+				439FAE01240E43110009CD9B /* loading.gif in Resources */,
 				435C19CD23F2847D0030D06C /* Main.storyboard in Resources */,
+				43B2E0A7240A897300F88623 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32862570556D347637B19A91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Timesheet/Pods-Timesheet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Timesheet/Pods-Timesheet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Timesheet/Pods-Timesheet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C0CC7541266CAC33503991F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Timesheet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		435C19BE23F2847D0030D06C /* Sources */ = {
@@ -140,7 +386,25 @@
 			files = (
 				435C19CA23F2847D0030D06C /* ViewController.swift in Sources */,
 				435C19C623F2847D0030D06C /* AppDelegate.swift in Sources */,
+				43B2E0AB240BAADE00F88623 /* idealreportvc.swift in Sources */,
+				43B2E0A4240A80F900F88623 /* reportsvc.swift in Sources */,
+				4376C13923F9B0E600B43812 /* BaseActivity.swift in Sources */,
+				439FAE03240E59B40009CD9B /* taskitem.swift in Sources */,
 				435C19C823F2847D0030D06C /* SceneDelegate.swift in Sources */,
+				439FAE05240E5ADA0009CD9B /* dbconnections.swift in Sources */,
+				4376C13B23F9B27600B43812 /* Assigntasksvc.swift in Sources */,
+				435C19EE23F2A8420030D06C /* Attendencevc.swift in Sources */,
+				439FAE07240E5E940009CD9B /* apicalls.swift in Sources */,
+				4376C13D23F9B44500B43812 /* timesheetentryvc.swift in Sources */,
+				43B2E0AD240BB1C200F88623 /* customisedreportvc.swift in Sources */,
+				43B2E09A240A79E200F88623 /* leaveschedulevc.swift in Sources */,
+				43B2E09F240A7C7300F88623 /* casemanagementvc.swift in Sources */,
+				435C19DA23F288790030D06C /* splashscreenvc.swift in Sources */,
+				435C19E323F28E270030D06C /* CardView.swift in Sources */,
+				439FAE09240E666E0009CD9B /* taskcell.swift in Sources */,
+				4376C13723F9AB5100B43812 /* dashboardvc.swift in Sources */,
+				43B2E095240A771800F88623 /* dailyschedulevc.swift in Sources */,
+				43B2E0A9240AB1E300F88623 /* loginvc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +546,7 @@
 		};
 		435C19D723F284810030D06C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1706A5715CE4AD985A2EFDF /* Pods-Timesheet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +564,7 @@
 		};
 		435C19D823F284810030D06C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0D4CEC895D02C04695D6F83 /* Pods-Timesheet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

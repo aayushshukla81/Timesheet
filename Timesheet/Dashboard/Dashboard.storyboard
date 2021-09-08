@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y9K-kq-fWS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HANNAN PARVEZ-->
+        <scene sceneID="EyQ-Nv-Du1">
+            <objects>
+                <viewController id="pp3-cf-dLN" customClass="dashboardvc" customModule="Timesheet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UBr-Dq-klT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="COT-5c-rPc">
+                                <rect key="frame" x="0.0" y="93" width="414" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LV-4c-tli">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31658254540000003" green="0.72902719500000002" blue="0.66734866429999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="1LV-4c-tli" secondAttribute="bottom" id="AMk-Cg-eLD"/>
+                                    <constraint firstItem="1LV-4c-tli" firstAttribute="centerX" secondItem="COT-5c-rPc" secondAttribute="centerX" id="Dbt-Es-CEa"/>
+                                    <constraint firstAttribute="trailing" secondItem="1LV-4c-tli" secondAttribute="trailing" id="Ekq-u9-Bjt"/>
+                                    <constraint firstAttribute="height" constant="30" id="XgY-7t-02T"/>
+                                    <constraint firstItem="1LV-4c-tli" firstAttribute="centerY" secondItem="COT-5c-rPc" secondAttribute="centerY" id="kvB-5x-fJQ"/>
+                                    <constraint firstItem="1LV-4c-tli" firstAttribute="leading" secondItem="COT-5c-rPc" secondAttribute="leading" id="xsq-um-Doo"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4M6-8a-wmA">
+                                <rect key="frame" x="0.0" y="123" width="414" height="739"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lOh-FP-mw2">
+                                        <rect key="frame" x="0.0" y="13" width="414" height="890"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="JIp-5J-ZZQ">
+                                                <rect key="frame" x="20" y="0.0" width="374" height="890"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Pnm-tT-Ish">
+                                                        <rect key="frame" x="0.0" y="0.0" width="167" height="890"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fkd-T7-pab" customClass="CardView" customModule="Timesheet" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="167" height="150"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="task" translatesAutoresizingMaskIntoConstraints="NO" id="HK7-o2-7xs">
+                                                                        <rect key="frame" x="33.5" y="25" width="100" height="80"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="100" id="94a-qO-VZ6"/>
+                                                                            <constraint firstAttribute="height" constant="80" id="szR-2N-7o3"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assign Tasks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLg-DH-gLy">
+                                                                        <rect key="frame" x="42" y="115" width="83.5" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="YLg-DH-gLy" firstAttribute="centerX" secondItem="fkd-T7-pab" secondAttribute="centerX" id="IAs-1V-RiZ"/>
+                                                                    <constraint firstItem="HK7-o2-7xs" firstAttribute="centerX" secondItem="fkd-T7-pab" secondAttribute="centerX" id="KtR-Dl-XyZ"/>
+                                                                    <constraint firstItem="YLg-DH-gLy" firstAttribute="top" secondItem="HK7-o2-7xs" secondAttribute="bottom" constant="10" id="NC0-Jl-NMA"/>
+                                                                    <constraint firstItem="HK7-o2-7xs" firstAttribute="centerX" secondItem="fkd-T7-pab" secondAttribute="centerX" id="RQ3-pU-Vua"/>
+                                                                    <constraint firstItem="HK7-o2-7xs" firstAttribute="centerY" secondItem="fkd-T7-pab" secondAttribute="centerY" constant="-10" id="X4l-Bc-cHk"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWe-yT-uTl" customClass="CardView" customModule="Timesheet" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="185" width="167" height="150"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timesheet" translatesAutoresizingMaskIntoConstraints="NO" id="R25-h8-r4z">
+                                                                        <rect key="frame" x="33.5" y="25" width="100" height="80"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="80" id="382-if-bMN"/>
+                                                                            <constraint firstAttribute="width" constant="100" id="YT0-4d-vf2"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timesheet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzg-HQ-hMs">
+                                                                        <rect key="frame" x="47.5" y="115" width="72.5" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="R25-h8-r4z" firstAttribute="centerX" secondItem="pWe-yT-uTl" secondAttribute="centerX" id="Goc-ZW-FTr"/>
+                                                                    <constraint firstItem="mzg-HQ-hMs" firstAttribute="centerX" secondItem="pWe-yT-uTl" secondAttribute="centerX" id="KDf-YE-rqB"/>
+                                                                    <constraint firstItem="mzg-HQ-hMs" firstAttribute="top" secondItem="R25-h8-r4z" secondAttribute="bottom" constant="10" id="RF3-rh-uf0"/>
+                                                                    <constraint firstAttribute="height" constant="150" id="X9M-Gf-Bw3"/>
+                                                                    <constraint firstItem="R25-h8-r4z" firstAttribute="centerY" secondItem="pWe-yT-uTl" secondAttribute="centerY" constant="-10" id="hVo-Nb-kHu"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ili-hz-Lzn" customClass="CardView" customModule="Timesheet" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="370" width="167" height="150"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leave" translatesAutoresizingMaskIntoConstraints="NO" id="jDg-5t-8IW">
+                                                                        <rect key="frame" x="33.5" y="25" width="100" height="80"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="80" id="9xG-L7-TFe"/>
+                                                                            <constraint firstAttribute="width" constant="100" id="x5L-br-b8B"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leave Schedule" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Amt-rI-oUM">
+                                                                        <rect key="frame" x="31.5" y="115" width="104.5" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="Amt-rI-oUM" firstAttribute="top" secondItem="jDg-5t-8IW" secondAttribute="bottom" constant="10" id="DWP-we-zQr"/>
+                                                                    <constraint firstItem="jDg-5t-8IW" firstAttribute="centerX" secondItem="ili-hz-Lzn" secondAttribute="centerX" id="KDl-sc-MWu"/>
+                                                                    <constraint firstItem="Amt-rI-oUM" firstAttribute="centerX" secondItem="ili-hz-Lzn" secondAttribute="centerX" id="Q42-qX-5kB"/>
+                                                                    <constraint firstItem="jDg-5t-8IW" firstAttribute="centerX" secondItem="ili-hz-Lzn" secondAttribute="centerX" id="r1A-jX-eVK"/>
+                                                                    <constraint firstItem="jDg-5t-8IW" firstAttribute="centerY" secondItem="ili-hz-Lzn" secondAttribute="centerY" constant="-10" id="uja-K6-6A7"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vYQ-EM-SiP" customClass="CardView" customModule="Timesheet" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="555" width="167" height="150"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reports" translatesAutoresizingMaskIntoConstraints="NO" id="Ck1-Eb-UQR">
+                                                                        <rect key="frame" x="33.5" y="25" width="100" height="80"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="80" id="Ayc-RZ-46g"/>
+                                                                            <constraint firstAttribute="width" constant="100" id="DdM-6D-KEI"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reports" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="212-X4-RYe">
+                                                                        <rect key="frame" x="55.5" y="115" width="56" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="Ck1-Eb-UQR" firstAttribute="centerY" secondItem="vYQ-EM-SiP" secondAttribute="centerY" constant="-10" id="7vB-3X-m26"/>
+                                                                    <constraint firstItem="212-X4-RYe" firstAttribute="centerX" secondItem="vYQ-EM-SiP" secondAttribute="centerX" id="SR3-7J-a5n"/>
+                                                                    <constraint firstItem="212-X4-RYe" firstAttribute="top" secondItem="Ck1-Eb-UQR" secondAttribute="bottom" constant="10" id="vWD-Xc-mpW"/>
+                                                                    <constraint firstItem="Ck1-Eb-UQR" firstAttribute="centerX" secondItem="vYQ-EM-SiP" secondAttribute="centerX" id="x8c-5M-xej"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fIt-Gz-nZ2" customClass="CardView" customModule="Timesheet" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="740" width="167" height="150"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logout" translatesAutoresizingMaskIntoConstraints="NO" id="IvN-1N-kqN">
+                                                                        <rect key="frame" x="33.5" y="25" width="100" height="80"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="100" id="9SH-Rd-WeX"/>
+                                                                            <constraint firstAttribute="height" constant="80" id="LE5-16-NTU"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ih3-4A-tx1">
+                                                                        <rect key="frame" x="59.5" y="115" width="48.5" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="IvN-1N-kqN" firstAttribute="centerY" secondItem="fIt-Gz-nZ2" secondAttribute="centerY" constant="-10" id="CpM-NY-act"/>
+                                                                    <constraint firstItem="IvN-1N-kqN" firstAttribute="centerX" secondItem="fIt-Gz-nZ2" secondAttribute="centerX" id="EMB-dC-MqT"/>
+                                                                    <constraint firstItem="IvN-1N-kqN" firstAttribute="centerX" secondItem="fIt-Gz-nZ2" secondAttribute="centerX" id="Tbe-nF-QYt"/>
+                                                                    <constraint firstItem="ih3-4A-tx1" firstAttribute="top" secondItem="IvN-1N-kqN" secondAttribute="bottom" constant="10" id="Xmk-yz-3s6"/>
+                                                                    <constraint firstItem="ih3-4A-tx1" firstAttribute="centerX" secondItem="fIt-Gz-nZ2" secondAttribute="centerX" id="i9D-oy-kfv"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="TEn-2U-HA3">
+                                                        <rect key="frame" x="207" y="0.0" width="167" height="890"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ff0-MR-ki7" customClass="CardView" customModule="Timesheet" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="167" height="150"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="attendance" translatesAutoresizingMaskIntoConstraints="NO" id="TVB-yV-lYb">
+                                                                        <rect key="frame" x="33.5" y="25" width="100" height="80"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="100" id="Ip0-9t-OEj"/>
+                                                                            <constraint firstAttribute="height" constant="80" id="RJw-ua-Vtu"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attendence" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xud-ZX-020">
+                                                                        <rect key="frame" x="43.5" y="115" width="80.5" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="TVB-yV-lYb" firstAttribute="centerX" secondItem="Ff0-MR-ki7" secondAttribute="centerX" id="3BS-Os-vDm"/>
+                                                                    <constraint firstItem="TVB-yV-lYb" firstAttribute="centerX" secondItem="Ff0-MR-ki7" secondAttribute="centerX" id="8EA-YH-az2"/>
+                                                                    <constraint firstItem="TVB-yV-lYb" firstAttribute="centerY" secondItem="Ff0-MR-ki7" secondAttribute="centerY" constant="-10" id="jXi-7v-hed"/>
+                                                                    <constraint firstItem="xud-ZX-020" firstAttribute="top" secondItem="TVB-yV-lYb" secondAttribute="bottom" constant="10" id="ozW-gS-1PE"/>
+                                                                    <constraint firstItem="TVB-yV-lYb" firstAttribute="centerX" secondItem="Ff0-MR-ki7" secondAttribute="centerX" id="t5E-SM-GzU"/>
+                                                                    <constraint firstItem="xud-ZX-020" firstAttribute="centerX" secondItem="Ff0-MR-ki7" secondAttribute="centerX" id="zzb-2x-hGj"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lKs-Rv-Enu" customClass="CardView" customModule="Timesheet" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="185" width="167" height="150"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="schedule" translatesAutoresizingMaskIntoConstraints="NO" id="CjY-1C-ra7">
+                                                                        <rect key="frame" x="33.5" y="25" width="100" height="80"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="100" id="Fth-fB-hTH"/>
+                                                                            <constraint firstAttribute="height" constant="80" id="eqU-jb-gNf"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Schedule" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ne5-fk-q3X">
+                                                                        <rect key="frame" x="33.5" y="115" width="100.5" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="Ne5-fk-q3X" firstAttribute="top" secondItem="CjY-1C-ra7" secondAttribute="bottom" constant="10" id="0KM-5V-vth"/>
+                                                                    <constraint firstItem="CjY-1C-ra7" firstAttribute="centerX" secondItem="lKs-Rv-Enu" secondAttribute="centerX" id="Dw4-hv-yB7"/>
+                                                                    <constraint firstItem="CjY-1C-ra7" firstAttribute="centerX" secondItem="lKs-Rv-Enu" secondAttribute="centerX" id="POW-Ey-jsl"/>
+                                                                    <constraint firstItem="Ne5-fk-q3X" firstAttribute="centerX" secondItem="lKs-Rv-Enu" secondAttribute="centerX" id="cdz-Aw-gtE"/>
+                                                                    <constraint firstItem="CjY-1C-ra7" firstAttribute="centerY" secondItem="lKs-Rv-Enu" secondAttribute="centerY" constant="-10" id="iZN-CK-a8H"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AIA-yK-pIb" customClass="CardView" customModule="Timesheet" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="370" width="167" height="150"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="casemanagement" translatesAutoresizingMaskIntoConstraints="NO" id="kna-6G-edc">
+                                                                        <rect key="frame" x="33.5" y="25" width="100" height="80"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="100" id="2NE-kZ-an5"/>
+                                                                            <constraint firstAttribute="height" constant="80" id="3Ck-om-XAP"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Case Management" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4Z-4a-QTg">
+                                                                        <rect key="frame" x="20.5" y="115" width="126" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="kna-6G-edc" firstAttribute="centerY" secondItem="AIA-yK-pIb" secondAttribute="centerY" constant="-10" id="0hY-4D-iO1"/>
+                                                                    <constraint firstItem="kna-6G-edc" firstAttribute="centerX" secondItem="AIA-yK-pIb" secondAttribute="centerX" id="aFL-mM-Kyk"/>
+                                                                    <constraint firstItem="R4Z-4a-QTg" firstAttribute="top" secondItem="kna-6G-edc" secondAttribute="bottom" constant="10" id="aoG-Ng-hJD"/>
+                                                                    <constraint firstItem="kna-6G-edc" firstAttribute="centerX" secondItem="AIA-yK-pIb" secondAttribute="centerX" id="iss-Xb-zpI"/>
+                                                                    <constraint firstItem="R4Z-4a-QTg" firstAttribute="centerX" secondItem="AIA-yK-pIb" secondAttribute="centerX" id="pcG-mN-hdq"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tcp-iy-PyY" customClass="CardView" customModule="Timesheet" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="555" width="167" height="150"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="changepassword" translatesAutoresizingMaskIntoConstraints="NO" id="ZZI-Cg-w9B">
+                                                                        <rect key="frame" x="33.5" y="25" width="100" height="80"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="100" id="YCm-7y-ejy"/>
+                                                                            <constraint firstAttribute="height" constant="80" id="qAU-ab-Can"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTm-JY-grg">
+                                                                        <rect key="frame" x="22.5" y="115" width="122" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="uTm-JY-grg" firstAttribute="centerX" secondItem="Tcp-iy-PyY" secondAttribute="centerX" id="DuF-xS-9dE"/>
+                                                                    <constraint firstItem="uTm-JY-grg" firstAttribute="centerX" secondItem="Tcp-iy-PyY" secondAttribute="centerX" id="ZEy-CV-Rfo"/>
+                                                                    <constraint firstItem="uTm-JY-grg" firstAttribute="centerX" secondItem="Tcp-iy-PyY" secondAttribute="centerX" id="a5t-0v-TNb"/>
+                                                                    <constraint firstItem="uTm-JY-grg" firstAttribute="top" secondItem="ZZI-Cg-w9B" secondAttribute="bottom" constant="10" id="n26-De-JqT"/>
+                                                                    <constraint firstItem="ZZI-Cg-w9B" firstAttribute="centerY" secondItem="Tcp-iy-PyY" secondAttribute="centerY" constant="-10" id="oit-sm-phO"/>
+                                                                    <constraint firstItem="ZZI-Cg-w9B" firstAttribute="centerX" secondItem="Tcp-iy-PyY" secondAttribute="centerX" id="vii-Iu-wbA"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HcH-dq-YYE" customClass="CardView" customModule="Timesheet" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="740" width="167" height="150"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exit" translatesAutoresizingMaskIntoConstraints="NO" id="Rlo-t8-uO8">
+                                                                        <rect key="frame" x="33.5" y="25" width="100" height="80"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="100" id="dDI-tf-ixT"/>
+                                                                            <constraint firstAttribute="height" constant="80" id="tcQ-xs-kjd"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnd-qb-5Sv">
+                                                                        <rect key="frame" x="70.5" y="115" width="26.5" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="Rlo-t8-uO8" firstAttribute="centerY" secondItem="HcH-dq-YYE" secondAttribute="centerY" constant="-10" id="6pc-OZ-lst"/>
+                                                                    <constraint firstItem="Rlo-t8-uO8" firstAttribute="centerX" secondItem="HcH-dq-YYE" secondAttribute="centerX" id="BXR-ss-ZlG"/>
+                                                                    <constraint firstItem="jnd-qb-5Sv" firstAttribute="centerX" secondItem="HcH-dq-YYE" secondAttribute="centerX" id="NUz-b7-m4P"/>
+                                                                    <constraint firstItem="Rlo-t8-uO8" firstAttribute="centerX" secondItem="HcH-dq-YYE" secondAttribute="centerX" id="fI3-2w-BVB"/>
+                                                                    <constraint firstItem="jnd-qb-5Sv" firstAttribute="top" secondItem="Rlo-t8-uO8" secondAttribute="bottom" constant="10" id="qX0-F1-gnE"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="JIp-5J-ZZQ" secondAttribute="trailing" constant="20" id="7ps-v5-Die"/>
+                                            <constraint firstItem="JIp-5J-ZZQ" firstAttribute="centerX" secondItem="lOh-FP-mw2" secondAttribute="centerX" id="MXD-5Z-CFW"/>
+                                            <constraint firstAttribute="bottom" secondItem="JIp-5J-ZZQ" secondAttribute="bottom" id="X4q-Km-0W7"/>
+                                            <constraint firstItem="JIp-5J-ZZQ" firstAttribute="leading" secondItem="lOh-FP-mw2" secondAttribute="leading" constant="20" id="gpN-Qe-Y0v"/>
+                                            <constraint firstItem="JIp-5J-ZZQ" firstAttribute="centerY" secondItem="lOh-FP-mw2" secondAttribute="centerY" id="omy-K4-Mea"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="lOh-FP-mw2" firstAttribute="top" secondItem="4M6-8a-wmA" secondAttribute="topMargin" constant="5" id="7h6-4A-4gu"/>
+                                    <constraint firstItem="lOh-FP-mw2" firstAttribute="leading" secondItem="f2L-ki-qIw" secondAttribute="leading" id="MXS-JF-m1A"/>
+                                    <constraint firstAttribute="trailing" secondItem="lOh-FP-mw2" secondAttribute="trailing" id="NGy-Ec-LoV"/>
+                                    <constraint firstAttribute="bottom" secondItem="lOh-FP-mw2" secondAttribute="bottom" constant="18" id="caw-JC-xFQ"/>
+                                    <constraint firstItem="lOh-FP-mw2" firstAttribute="leading" secondItem="LoA-LN-cqR" secondAttribute="leading" id="eT1-vV-dKS"/>
+                                    <constraint firstItem="lOh-FP-mw2" firstAttribute="trailing" secondItem="f2L-ki-qIw" secondAttribute="trailing" id="kvL-Tp-LMB"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="LoA-LN-cqR"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="f2L-ki-qIw"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4M6-8a-wmA" firstAttribute="top" secondItem="COT-5c-rPc" secondAttribute="bottom" id="GeC-tH-ixU"/>
+                            <constraint firstItem="COT-5c-rPc" firstAttribute="top" secondItem="7fV-Oh-ehX" secondAttribute="top" constant="5" id="GpP-JD-3Z1"/>
+                            <constraint firstItem="COT-5c-rPc" firstAttribute="leading" secondItem="7fV-Oh-ehX" secondAttribute="leading" id="Kxi-al-lVM"/>
+                            <constraint firstItem="4M6-8a-wmA" firstAttribute="trailing" secondItem="7fV-Oh-ehX" secondAttribute="trailing" id="M3S-ar-dpc"/>
+                            <constraint firstItem="4M6-8a-wmA" firstAttribute="leading" secondItem="UBr-Dq-klT" secondAttribute="leading" id="ZS7-Ou-0yT"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="4M6-8a-wmA" secondAttribute="bottom" id="fAC-OA-32K"/>
+                            <constraint firstItem="4M6-8a-wmA" firstAttribute="leading" secondItem="7fV-Oh-ehX" secondAttribute="leading" id="fV9-qP-Ch4"/>
+                            <constraint firstItem="7fV-Oh-ehX" firstAttribute="trailing" secondItem="COT-5c-rPc" secondAttribute="trailing" id="xBN-GO-ZzA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7fV-Oh-ehX"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="HANNAN PARVEZ" id="Ird-2M-PW6"/>
+                    <connections>
+                        <outlet property="assigntasksCard" destination="fkd-T7-pab" id="zvv-Di-nQc"/>
+                        <outlet property="attendenceCard" destination="Ff0-MR-ki7" id="aUi-5t-MpJ"/>
+                        <outlet property="casemanagementCard" destination="AIA-yK-pIb" id="qTz-BW-s1E"/>
+                        <outlet property="changepasswordCard" destination="Tcp-iy-PyY" id="psA-Qa-0Qo"/>
+                        <outlet property="dailyscheduleCard" destination="lKs-Rv-Enu" id="aCN-qD-qTL"/>
+                        <outlet property="exitCard" destination="HcH-dq-YYE" id="lSa-cq-WkT"/>
+                        <outlet property="leavescheduleCard" destination="ili-hz-Lzn" id="rLE-7h-LPg"/>
+                        <outlet property="logoutCard" destination="fIt-Gz-nZ2" id="y1s-fO-q3z"/>
+                        <outlet property="reportsCard" destination="vYQ-EM-SiP" id="Vai-Ul-88x"/>
+                        <outlet property="scrollview" destination="4M6-8a-wmA" id="PP3-dj-IpT"/>
+                        <outlet property="timesheetCard" destination="pWe-yT-uTl" id="esb-PQ-9Od"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b8f-B7-E5w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842.02898550724649" y="-50.223214285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="18y-vK-U16">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y9K-kq-fWS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7vG-2V-QIa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.20423692460000001" green="0.46699118610000001" blue="0.42352318760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pp3-cf-dLN" kind="relationship" relationship="rootViewController" id="Pdr-mG-aoU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hdi-cU-LI1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-68.115942028985515" y="-50.223214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="attendance" width="96" height="96"/>
+        <image name="casemanagement" width="100" height="100"/>
+        <image name="changepassword" width="96" height="96"/>
+        <image name="exit" width="96" height="96"/>
+        <image name="leave" width="96" height="96"/>
+        <image name="logout" width="96" height="96"/>
+        <image name="reports" width="96" height="96"/>
+        <image name="schedule" width="96" height="96"/>
+        <image name="task" width="96" height="96"/>
+        <image name="timesheet" width="96" height="96"/>
+    </resources>
+</document>

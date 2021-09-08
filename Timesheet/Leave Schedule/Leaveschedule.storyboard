@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="baD-Ws-T9u">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Leaveschedulevc-->
+        <scene sceneID="GfG-Mg-TGs">
+            <objects>
+                <viewController id="i9V-Qa-Q6C" customClass="leaveschedulevc" customModule="Timesheet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bmH-Pw-JGG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UnH-XQ-s7i">
+                                <rect key="frame" x="0.0" y="98" width="414" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leave Schedule" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeI-33-dfl">
+                                        <rect key="frame" x="114.5" y="5" width="185" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31658254540000003" green="0.72902719500000002" blue="0.66734866429999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="qeI-33-dfl" firstAttribute="centerX" secondItem="UnH-XQ-s7i" secondAttribute="centerX" id="0Vx-Wb-DDt"/>
+                                    <constraint firstItem="qeI-33-dfl" firstAttribute="centerY" secondItem="UnH-XQ-s7i" secondAttribute="centerY" id="MJc-Zi-l4s"/>
+                                    <constraint firstAttribute="height" constant="40" id="XyY-u8-gfY"/>
+                                    <constraint firstItem="qeI-33-dfl" firstAttribute="centerY" secondItem="UnH-XQ-s7i" secondAttribute="centerY" id="stK-Yk-R1q"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QQf-O6-Ttg">
+                                <rect key="frame" x="10" y="168" width="394" height="60"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pbf-lA-ZE6" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                <color key="value" red="0.20423692460000001" green="0.46699118610000001" blue="0.42352318760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="selectedTitle" value="From Date"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="From Date"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="From Date"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calender_icon" translatesAutoresizingMaskIntoConstraints="NO" id="iNf-LI-1h6">
+                                        <rect key="frame" x="354" y="25" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="had-3I-GAf"/>
+                                            <constraint firstAttribute="width" constant="30" id="sQV-aA-PcQ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2jU-du-BUh"/>
+                                    <constraint firstItem="iNf-LI-1h6" firstAttribute="centerY" secondItem="QQf-O6-Ttg" secondAttribute="centerY" constant="10" id="IYv-gR-vho"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pbf-lA-ZE6" secondAttribute="bottom" id="XSm-jd-qws"/>
+                                    <constraint firstAttribute="trailing" secondItem="iNf-LI-1h6" secondAttribute="trailing" constant="10" id="YIG-U1-iMq"/>
+                                    <constraint firstItem="Pbf-lA-ZE6" firstAttribute="top" secondItem="QQf-O6-Ttg" secondAttribute="top" id="dVF-nJ-zds"/>
+                                    <constraint firstItem="Pbf-lA-ZE6" firstAttribute="leading" secondItem="QQf-O6-Ttg" secondAttribute="leading" id="hse-cm-VOk"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pbf-lA-ZE6" secondAttribute="trailing" id="u2f-wT-Jzc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pTe-Zz-v8k">
+                                <rect key="frame" x="10" y="238" width="394" height="60"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bOb-QS-5lH" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                <color key="value" red="0.20423692460000001" green="0.46699118610000001" blue="0.42352318760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="selectedTitle" value="For Days"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="For Days"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="bOb-QS-5lH" secondAttribute="trailing" id="Dha-b3-wsn"/>
+                                    <constraint firstAttribute="bottom" secondItem="bOb-QS-5lH" secondAttribute="bottom" id="Krv-Yv-0Ty"/>
+                                    <constraint firstAttribute="height" constant="60" id="OBu-EK-DXe"/>
+                                    <constraint firstItem="bOb-QS-5lH" firstAttribute="top" secondItem="pTe-Zz-v8k" secondAttribute="top" id="Pdb-we-rYQ"/>
+                                    <constraint firstItem="bOb-QS-5lH" firstAttribute="leading" secondItem="pTe-Zz-v8k" secondAttribute="leading" id="gPv-kr-k2h"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIk-kB-E7R" customClass="CardView" customModule="Timesheet" customModuleProvider="target">
+                                <rect key="frame" x="20" y="328" width="374" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--Select Leave Type--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaX-EB-iRq">
+                                        <rect key="frame" x="5" y="10" width="169.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_icon" translatesAutoresizingMaskIntoConstraints="NO" id="hZy-dc-ta9">
+                                        <rect key="frame" x="354" y="15" width="10" height="10"/>
+                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="5UX-9J-jzS"/>
+                                            <constraint firstAttribute="width" constant="10" id="e4m-DQ-Eaz"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hZy-dc-ta9" secondAttribute="trailing" constant="10" id="9Cu-An-ebw"/>
+                                    <constraint firstAttribute="height" constant="40" id="l48-ob-iQ5"/>
+                                    <constraint firstItem="VaX-EB-iRq" firstAttribute="centerY" secondItem="vIk-kB-E7R" secondAttribute="centerY" id="mqg-6e-0Ex"/>
+                                    <constraint firstItem="VaX-EB-iRq" firstAttribute="leading" secondItem="vIk-kB-E7R" secondAttribute="leading" constant="5" id="qjc-0N-6jh"/>
+                                    <constraint firstItem="hZy-dc-ta9" firstAttribute="centerY" secondItem="vIk-kB-E7R" secondAttribute="centerY" id="wg1-u5-UgH"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wWZ-Vj-ELr" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="10" y="378" width="394" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="stN-WQ-j4d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                        <color key="value" red="0.20423692460000001" green="0.46699118610000001" blue="0.42352318760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="selectedTitle" value="Title"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Title"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GVv-nF-KcJ" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="10" y="448" width="394" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="PdZ-12-atp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                        <color key="value" red="0.20423692460000001" green="0.46699118610000001" blue="0.42352318760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="selectedTitle" value="Description"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Description"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GsK-Fo-ZNS">
+                                <rect key="frame" x="30" y="558" width="354" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="QMq-I0-tMD"/>
+                                </constraints>
+                                <state key="normal" title="Submit" backgroundImage="submit_button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NBX-Ca-ZFs" firstAttribute="trailing" secondItem="GsK-Fo-ZNS" secondAttribute="trailing" constant="30" id="1a3-RI-pFo"/>
+                            <constraint firstItem="GVv-nF-KcJ" firstAttribute="top" secondItem="wWZ-Vj-ELr" secondAttribute="bottom" constant="10" id="5kB-mE-ms7"/>
+                            <constraint firstItem="NBX-Ca-ZFs" firstAttribute="trailing" secondItem="GVv-nF-KcJ" secondAttribute="trailing" constant="10" id="6KD-bh-RnH"/>
+                            <constraint firstItem="wWZ-Vj-ELr" firstAttribute="leading" secondItem="NBX-Ca-ZFs" secondAttribute="leading" constant="10" id="7eJ-j8-g5Y"/>
+                            <constraint firstItem="GsK-Fo-ZNS" firstAttribute="top" secondItem="GVv-nF-KcJ" secondAttribute="bottom" constant="50" id="AiB-Zi-TAW"/>
+                            <constraint firstItem="GVv-nF-KcJ" firstAttribute="leading" secondItem="NBX-Ca-ZFs" secondAttribute="leading" constant="10" id="CEJ-1O-ALb"/>
+                            <constraint firstItem="vIk-kB-E7R" firstAttribute="leading" secondItem="NBX-Ca-ZFs" secondAttribute="leading" constant="20" id="EJ8-dI-wS8"/>
+                            <constraint firstItem="QQf-O6-Ttg" firstAttribute="leading" secondItem="NBX-Ca-ZFs" secondAttribute="leading" constant="10" id="GrR-6E-Wq3"/>
+                            <constraint firstItem="wWZ-Vj-ELr" firstAttribute="top" secondItem="vIk-kB-E7R" secondAttribute="bottom" constant="10" id="Kkp-MO-G4H"/>
+                            <constraint firstItem="UnH-XQ-s7i" firstAttribute="leading" secondItem="NBX-Ca-ZFs" secondAttribute="leading" id="LzY-fo-Pis"/>
+                            <constraint firstItem="UnH-XQ-s7i" firstAttribute="top" secondItem="NBX-Ca-ZFs" secondAttribute="top" constant="10" id="Mh2-qB-yVv"/>
+                            <constraint firstItem="NBX-Ca-ZFs" firstAttribute="trailing" secondItem="pTe-Zz-v8k" secondAttribute="trailing" constant="10" id="PbE-H0-Ucx"/>
+                            <constraint firstItem="vIk-kB-E7R" firstAttribute="top" secondItem="pTe-Zz-v8k" secondAttribute="bottom" constant="30" id="S2P-Ta-tnU"/>
+                            <constraint firstItem="GsK-Fo-ZNS" firstAttribute="leading" secondItem="NBX-Ca-ZFs" secondAttribute="leading" constant="30" id="SQY-Ty-mDZ"/>
+                            <constraint firstItem="pTe-Zz-v8k" firstAttribute="leading" secondItem="NBX-Ca-ZFs" secondAttribute="leading" constant="10" id="T1W-zX-b06"/>
+                            <constraint firstItem="NBX-Ca-ZFs" firstAttribute="trailing" secondItem="vIk-kB-E7R" secondAttribute="trailing" constant="20" id="VDC-oz-RmI"/>
+                            <constraint firstItem="NBX-Ca-ZFs" firstAttribute="trailing" secondItem="wWZ-Vj-ELr" secondAttribute="trailing" constant="10" id="fjl-EC-oQq"/>
+                            <constraint firstItem="QQf-O6-Ttg" firstAttribute="top" secondItem="UnH-XQ-s7i" secondAttribute="bottom" constant="30" id="kOB-l1-DUT"/>
+                            <constraint firstItem="NBX-Ca-ZFs" firstAttribute="trailing" secondItem="QQf-O6-Ttg" secondAttribute="trailing" constant="10" id="kXi-lU-cR9"/>
+                            <constraint firstItem="UnH-XQ-s7i" firstAttribute="trailing" secondItem="NBX-Ca-ZFs" secondAttribute="trailing" id="uL9-iY-K0T"/>
+                            <constraint firstItem="pTe-Zz-v8k" firstAttribute="top" secondItem="QQf-O6-Ttg" secondAttribute="bottom" constant="10" id="yh0-j4-vf8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NBX-Ca-ZFs"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="acs-Kj-AnE">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="arrowshape.turn.up.left.fill" catalog="system" id="5w5-nl-sNh">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="goback:" destination="i9V-Qa-Q6C" id="Xaw-tz-v2K"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="fromdate" destination="Pbf-lA-ZE6" id="IMd-Oc-zLi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gsL-0E-MGX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="108.48214285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HbA-aD-5Ar">
+            <objects>
+                <navigationController storyboardIdentifier="leaveschedulenc" automaticallyAdjustsScrollViewInsets="NO" id="baD-Ws-T9u" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T3G-Eb-Oxs">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.20423692460000001" green="0.46699118610000001" blue="0.42352318760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="i9V-Qa-Q6C" kind="relationship" relationship="rootViewController" id="2Sf-a2-Yaf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2uR-Vb-5w5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="108.48214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow_icon" width="22" height="12"/>
+        <image name="arrowshape.turn.up.left.fill" catalog="system" width="64" height="52"/>
+        <image name="calender_icon" width="28" height="29"/>
+        <image name="submit_button" width="241" height="96"/>
+    </resources>
+</document>
